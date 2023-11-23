@@ -10,7 +10,9 @@
   <Project Name="ForLoop" Path="ForLoop/ForLoop.project" Active="No"/>
   <Project Name="RangeBasedForLoop" Path="RangeBasedForLoop/RangeBasedForLoop.project" Active="No"/>
   <Project Name="WhileLoop" Path="WhileLoop/WhileLoop.project" Active="No"/>
-  <Project Name="DoWhile" Path="DoWhile/DoWhile.project" Active="Yes"/>
+  <Project Name="DoWhile" Path="DoWhile/DoWhile.project" Active="No"/>
+  <Project Name="MultiplicationTable" Path="MultiplicationTable/MultiplicationTable.project" Active="No"/>
+  <Project Name="Histogram" Path="Histogram/Histogram.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -25,6 +27,8 @@
       <Project Name="RangeBasedForLoop" ConfigName="Debug"/>
       <Project Name="WhileLoop" ConfigName="Debug"/>
       <Project Name="DoWhile" ConfigName="Debug"/>
+      <Project Name="MultiplicationTable" ConfigName="Debug"/>
+      <Project Name="Histogram" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -39,6 +43,8 @@
       <Project Name="RangeBasedForLoop" ConfigName="Release"/>
       <Project Name="WhileLoop" ConfigName="Release"/>
       <Project Name="DoWhile" ConfigName="Release"/>
+      <Project Name="MultiplicationTable" ConfigName="Release"/>
+      <Project Name="Histogram" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
