@@ -83,6 +83,7 @@ int main() {
         cout << "\nEnter your choice: ";
         cin >> selection;
         
+        
         if (selection == 'P' || selection == 'p') {
             if (numbers.size() == 0)
                 cout << "[] - the list is empty" << endl;
@@ -106,13 +107,32 @@ int main() {
                 for (auto num: numbers)
                     total += num;
                 cout << "The mean is : " << static_cast<double>(total)/numbers.size() << endl;
-                
             }
-            
+        } else if (selection == 'S' || selection == 's') {
+            if (numbers.size() == 0)
+                cout << "Unable to determine the smallest - list is empty" << endl;
+            else {
+                int smallest = numbers.at(0);
+                for (auto num: numbers)
+                    if (num < smallest)
+                        smallest = num;
+                cout << "The smallest number is: " << smallest << endl;
+            }
+        } else if (selection == 'L' || selection == 'l') {
+            if (numbers.size() == 0)
+                cout << "Unable to determine largest - list is empty"<< endl;
+            else {
+                int largest = numbers.at(0);
+                for (auto num: numbers)
+                    if (num > largest)
+                        largest = num;
+                cout << "The largest number is: " << largest << endl;
+            }
+        } else if (selection == 'Q' || selection == 'q') {
+            cout << "Goodbye" << endl;
+        } else {
+            cout << "Unknown selection, please try again" << endl;
         }
-        
-        
-        
     } while (selection != 'q' && selection != 'Q');
     
     cout << endl;
